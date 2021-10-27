@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/groups_item_background"
+        android:padding="3dp"
+        android:id="@+id/ll_userInfo_Card">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_groupMemberProfile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="3dp"
+            android:src="@drawable/default_profile"
+            app:civ_border_color="@color/grey6"
+            app:civ_border_width="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_groupMemberName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:fontFamily="@font/chewyregular"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:text="Username"
+                android:textColor="@color/grey2"
+                android:textSize="15sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_groupDesignation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:fontFamily="@font/chewyregular"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:text="Username"
+                android:textColor="@color/grey3"
+                android:textSize="13sp"
+                android:textStyle="italic">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_isSelectedForDeletion"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/selected"
+        android:layout_toRightOf="@id/ll_userInfo_Card"
+        android:layout_marginLeft="-25dp"
+        android:elevation="3dp"
+        android:translationZ="3dp"
+        android:layout_centerVertical="true"
+        android:visibility="gone">
+
+    </ImageView>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "644887787829",
+    "project_id": "discuter-8ec5d",
+    "storage_bucket": "discuter-8ec5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644887787829:android:69915175d3b12542ce747c",
+        "android_client_info": {
+          "package_name": "com.example.discuter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644887787829-5m29fqeupqk7okg56jf64l0u7ahd0k2e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_MQVWIZd24eqLV5zuH8sKc6ksOj21OT0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644887787829-5m29fqeupqk7okg56jf64l0u7ahd0k2e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

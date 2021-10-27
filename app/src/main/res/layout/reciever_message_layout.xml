@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image_reciever_chat_item"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
+        android:elevation="10dp"
+        android:src="@drawable/default_profile"
+        android:translationZ="10dp"
+        app:civ_border_color="@color/grey4"
+        app:civ_border_width="1dp" />
+
+    <LinearLayout
+        android:id="@+id/messageContainerReciever"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@id/profile_image_reciever_chat_item"
+        android:background="@drawable/reciever_message_layout_background"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/reciever_image_message"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"></ImageView>
+
+        <TextView
+            android:id="@+id/reciever_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left"
+            android:fontFamily="@font/chewyregular"
+            android:text="Discuter chats reciever"></TextView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/reciever_reaction"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignBottom="@id/messageContainerReciever"
+        android:layout_toRightOf="@id/messageContainerReciever"
+        android:visibility="gone"></ImageView>
+
+
+</RelativeLayout>

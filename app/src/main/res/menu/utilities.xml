@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ProfileSettingsUtility"
+        android:title="Profile Settings"
+        android:icon="@drawable/ic_baseline_settings_24" />
+
+    <item
+        android:id="@+id/ChangePasswordUtility"
+        android:title="Change Password"
+        android:icon="@drawable/edit" />
+
+    <item
+        android:id="@+id/CreateGroupUtility"
+        android:title="Create Group"
+        android:icon="@drawable/group"/>
+
+    <item
+        android:id="@+id/LogOutUtility"
+        android:title="Log Out"
+        android:icon="@drawable/power"/>
+
+</menu>

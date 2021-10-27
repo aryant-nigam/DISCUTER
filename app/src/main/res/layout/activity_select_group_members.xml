@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SelectGroupMembers"
+    android:background="@color/grey8">
+
+    <ProgressBar
+        android:id="@+id/load6"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/progressbar_background"
+        android:elevation="8dp"
+        android:indeterminateTint="@color/grey6"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
+    <RelativeLayout
+        android:id="@+id/titleToolbarGroup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/grey8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/chewyregular"
+            android:shadowColor="@color/grey10"
+            android:shadowDx="2"
+            android:shadowDy="3"
+            android:shadowRadius="2"
+            android:text="Select Group Members"
+            android:textColor="@color/grey3"
+            android:textSize="25sp">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_doneSelectingMembers"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/progressbar_background"
+            android:src="@drawable/sent" />
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/et_searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/titleToolbarGroup"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/curved_entries"
+        android:backgroundTint="@color/grey5"
+        android:drawableLeft="@drawable/search"
+        android:drawablePadding="4dp"
+        android:fontFamily="@font/chewyregular"
+        android:paddingLeft="8dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/grey1">
+
+    </EditText>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/et_searchBox">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_selectMemberList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ActivityTab"
+    android:background="@color/grey8"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/grey8"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="3dp"
+            android:layout_weight="1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileDisplay_homeActivity"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:elevation="10dp"
+                android:src="@drawable/default_profile"
+                android:translationZ="10dp"
+                app:civ_border_color="@color/grey4"
+                app:civ_border_width="1dp"
+                android:transitionName="open_profile" />
+
+            <TextView
+                android:id="@+id/usernameDisplay_homeActivity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:fontFamily="@font/chewyregular"
+                android:paddingLeft="10dp"
+                android:shadowColor="@color/grey10"
+                android:shadowDx="2"
+                android:shadowDy="3"
+                android:shadowRadius="2"
+                android:text="Discuter"
+                android:textColor="@color/grey1"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:background="@drawable/menuicon">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tl_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        android:background="@color/grey8"
+        app:tabIndicator="@drawable/custom_tab_indicator"
+        app:tabIndicatorHeight="3dp"
+        app:tabSelectedTextColor="@color/grey1"
+        app:tabTextAppearance="@style/tab_text"
+        app:tabTextColor="@color/grey3"
+        app:tabIndicatorColor="@color/grey1">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/ti_chats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chats"></com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/ti_groups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Groups"></com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/ti_moods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moods"></com.google.android.material.tabs.TabItem>
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tl_tablayout"
+        android:backgroundTint="@color/grey9">
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+
+    
+</RelativeLayout>

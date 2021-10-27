@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/curved_background"
+    android:backgroundTint="@color/white"
+   >
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="7dp">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="otp.json"
+                    app:lottie_loop="true"></com.airbnb.lottie.LottieAnimationView>
+
+                <Button
+                    android:id="@+id/getLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:backgroundTint="@color/grey6"
+                    android:elevation="2dp"
+                    android:fontFamily="@font/chewyregular"
+                    android:shadowColor="@color/grey10"
+                    android:shadowDx="2"
+                    android:shadowDy="3"
+                    android:shadowRadius="2"
+                    android:text="GET LINK"
+                    android:textColor="@color/grey3"
+                    android:textSize="18sp"
+                    android:translationZ="3dp"></Button>
+
+                <TextView
+                    android:id="@+id/linkMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/chewyregular"
+                    android:shadowColor="@color/grey8"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:textColor="@color/grey5"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/VerificationOk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/chewyregular"
+                            android:padding="5dp"
+                            android:shadowColor="@color/grey6"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="2"
+                            android:text="OK"
+                            android:textColor="@color/grey8"
+                            android:textSize="18sp"></TextView>
+
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+</RelativeLayout>
